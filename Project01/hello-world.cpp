@@ -2,14 +2,10 @@
 
 #include <iostream>
 using std::cout;
-////int main()
-////{
-////    cout << "Hello World!\n";
-////    return 0;
-//}
-
 int main()
 {
-    cout << "New project using specific standard obj" << std :: endl;
-    return 0;
+ cout << "Hello World!\n";
+  return 0;
 }
+
+
