@@ -15,8 +15,8 @@ int main()
 	cout << fmod(10, 4.25) << endl;
 	cout << fmax(45.59, 35) << endl;
 	cout << fmin(0.956, 1.0) << endl;
-	cout << ceil(2.576) << endl;
-	cout << floor(0.986) << endl;
+	cout << ceil(2.576) << endl;		// will return the smallaest integer is greaterthan r = the given arg
+	cout << floor(0.986) << endl;		// will return the largest integer is lessthan r = the given arg
 	cout << floor(-2.343536) << endl;
 	cout << trunc(-5.654) << endl;
 	cout << round(5.986356) << endl;
