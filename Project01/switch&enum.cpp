@@ -48,3 +48,20 @@ int main()
 	
 }
   
+
+#include <iostream>
+
+int main()
+{
+	enum class Season { winter, summer, spring };
+	Season there = Season::spring;
+switch (there)
+{
+	case Season::winter:
+		break;
+	case Season::summer:
+			break;
+	case Season::spring:
+				std::cout << " Let's enjoy! " << std::endl;
+}
+}
