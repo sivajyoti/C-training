@@ -1,0 +1,15 @@
+#include <iostream>
+
+using std::cout;
+int main()
+{
+	int a = 30;
+	int b = 0x30; //declaring for hexa means 16*3
+	int c = 030; //declaring for octa marns  8*3
+
+	cout << a << std::endl;
+	cout << b << std::endl;
+	cout << c << std::endl;
+	cout << std::hex << a << std::endl; //dec-hexa
+	cout << std::oct << a << std::endl;  //dec=octa
+}
