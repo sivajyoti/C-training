@@ -20,7 +20,7 @@ int main()
 }
 
 
-Or lese we can directlly intialize the values
+Or else we can directlly intialize the values
 
 int main()
 {
