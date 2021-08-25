@@ -23,7 +23,7 @@ int main()
 #include <iostream>
 #include <string.h>
 
-void print(char* c)
+void print(const char* c)
 {
 	while (*c !='\0')
 	{
@@ -36,5 +36,6 @@ void print(char* c)
 int main()
 {
 	char c[] = "Hello";
+	//char *c = "hello";
 	print(c);
 }
