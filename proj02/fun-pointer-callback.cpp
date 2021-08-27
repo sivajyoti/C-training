@@ -33,8 +33,11 @@ int main()
 
 int compare(int a, int b)
 {
-	if (a > b) return -1;
+	if (a > b) return -1;  				//For decreasing
 	else return 1;
+	
+	//if (a > b) return 1;  				//For incremental
+	//else return -1;
 }
 
 
