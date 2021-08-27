@@ -15,3 +15,41 @@ int main()
 	std::cout << c << std::endl;
 
 }
+
+
+//creating diff functions
+
+#include <iostream>
+#include <stdio.h>
+
+void sayHello()
+{
+	std::cout << " Hello " << std::endl;
+}
+
+int main()
+{
+	void(*p) ();
+	p = sayHello;
+	p();
+}
+
+//string
+
+#include <iostream>
+#include <stdio.h>
+
+void sayhi(const char *name)
+{
+	std::cout << " hi " << name << std::endl;
+	name = "newdata";
+	std::cout << name << std::endl;
+}
+
+int main()
+{
+	void(*s) (const char*);
+	s = sayhi;
+	s("Jhon seena");
+
+}
