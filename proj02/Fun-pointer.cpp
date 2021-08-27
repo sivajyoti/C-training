@@ -39,17 +39,17 @@ int main()
 #include <iostream>
 #include <stdio.h>
 
-void sayhi(const char *name)
+void sayhi(char* name)
 {
 	std::cout << " hi " << name << std::endl;
-	name = "newdata";
-	std::cout << name << std::endl;
+	
 }
 
 int main()
 {
-	void(*s) (const char*);
+	void(*s) (char*);
 	s = sayhi;
-	s("Jhon seena");
+	char c[8] = " jyothi";
+	s(c);
 
 }
