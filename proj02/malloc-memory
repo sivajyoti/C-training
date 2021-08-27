@@ -30,7 +30,7 @@ void play(int bet)
 	else 
 	{
 		cash -= bet;
-		std::cout << " you Loose Result= Total cash = c[0], c[1], c[2], cash" << std::endl;
+		std::cout << " you Loose Result= Total cash = c[0], c[1], c[2], cash" << std::endl; //in this case as we are using malloc, we need to use Free, to freeup th eunusered memory of not the memory size will keep on increasing.
 	}
 }
 
