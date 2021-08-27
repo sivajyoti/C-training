@@ -1,0 +1,51 @@
+#include <iostream>
+#include <stdio.h>
+#include <math.h>
+
+int cash = 100;
+
+void play(int bet)
+{
+	char* c = (char*)malloc(3 * sizeof(char*));
+	c[0]='J', c[1]='Q', c[2]= 'k' ;
+	std::cout << " shuffling.....";
+	int i;
+	srand(time(NULL));
+	int X = rand() % 3;
+	int Y = rand() % 3;
+	for (i = 0; i < 5; i++)
+	{
+		int temp = c[X];
+		c[X] = c[Y];
+		c[Y] = temp;
+	}
+	int playerguess;
+	std::cout << " what is the player position - 1, 2, 3? ";
+	std::cin >> playerguess;
+	if (c[playerguess] - 1 == 'Q') 
+	{
+		cash += 3 * cash;
+		std::cout << " you won! Result=  Toatl Cash = c[0],c[1], c[2],cash" << std::endl;
+	}
+	else 
+	{
+		cash -= bet;
+		std::cout << " you Loose Result= Total cash = c[0], c[1], c[2], cash" << std::endl;
+	}
+}
+
+
+int main()
+{
+	int bet;
+	std::cout << " Welcome to the virtual cashio " << std::endl;
+	std::cout << " Total cash" << cash  << std::endl;
+	while (cash > 0)
+	{
+		std::cout << "Please enter the bet amount? &";
+		std::cin >> bet;
+		if (bet == 0 || bet > cash) break;
+		play(bet);
+	}
+	
+}
